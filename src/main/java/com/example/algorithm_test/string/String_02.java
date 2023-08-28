@@ -1,5 +1,6 @@
 package com.example.algorithm_test.string;
 
+import java.util.DoubleSummaryStatistics;
 import java.util.Scanner;
 
 public class String_02 {
@@ -13,21 +14,8 @@ public class String_02 {
     // !출력
     // * 첫째 줄에 준하의 놀람을 출력한다. 놀람은 아이디 뒤에 ??!를 붙여서 나타낸다.
 
-    public String solution(String str) {
-        String answer = "";
-        if(str.matches(str)) {
-            answer = str.concat("??!");
-        }
-
-        return answer;
-    }
-
     public static void main(String[] args) {
-        String_02 T = new String_02();
-        Scanner sc = new Scanner(System.in);
-        String a = sc.next();
-
-        System.out.println(T.solution(a));
+        System.out.println(new Scanner(System.in).next()+"??!");
     }
 
 
