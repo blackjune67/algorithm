@@ -6,9 +6,6 @@ import java.util.stream.IntStream;
 
 public class SelectSort {
     public static void main(String[] args) {
-        /*Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine(); // * 15, 6, 9, 10, 2
-        IntStream chars = s.chars();*/
         int[] dataList = {15, 6, 9, 10, 2};
         int temp;
         int lowest; // * 작은 값을 기억할 변수
@@ -26,6 +23,5 @@ public class SelectSort {
             dataList[i] = temp;
         }
         System.out.println("return = " + Arrays.toString(dataList));
-//        System.out.println("dataList[temp] = " + dataList[temp]);
     }
 }
