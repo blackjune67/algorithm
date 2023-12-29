@@ -7,9 +7,18 @@ import java.util.stream.IntStream;
 
 public class SelectSort {
     public static void main(String[] args) {
-        int[] dataList = {15, 6, 9, 10, 2};
+//        int[] dataList = {15, 6, 9, 10, 2};
         int temp;
         int lowest; // * 작은 값을 기억할 변수
+
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int[] dataList = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            dataList[i] = scanner.nextInt();
+        }
+
 
         for (int i = 0; i < dataList.length - 1; i++) { // * 작은 값을 찾는다 (인덱스는 0부터 접근)
             lowest = i;
